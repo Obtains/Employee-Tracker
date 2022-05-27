@@ -1,4 +1,6 @@
-INSERT INTO deparment (name)
+USE employee_DB;
+
+INSERT INTO department (name)
 VALUES
 ('Sales'),
 ('IT'),
@@ -6,9 +8,9 @@ VALUES
 ('Marketing'),
 ('Design');
 
-SELECT * FROM DEPARMENT;
+SELECT * FROM DEPARTMENT;
 
-INSERT INTO role (title, salary, deparment_id)
+INSERT INTO role (title, salary, department_id)
 VALUES
 ('Sales Represenative', 70000, 1),
 ('IT Specialist', 100000, 2),
@@ -22,10 +24,10 @@ VALUES
 SELECT * FROM ROLE;
 
 INSERT INTO employee (first_name, last_name, role_id, manager_id)
-VALUES
+VALUES 
 ('Roronoa', 'Zoro', 3, 1),
 ('Monkey D.', 'Luffy', 5, 2),
-('Nami', 'Bellmere', 4, 2),
+('Nami', 'Bellmere', 4, 3),
 ('Nico', 'Robin', 2, NULL),
 ('Cutty', 'Flam', 1, NULL);
 
